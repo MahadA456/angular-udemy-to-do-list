@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "01-starting-project/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "01-starting-project/dist/angular-udemy-to-do-list"
+      }
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
